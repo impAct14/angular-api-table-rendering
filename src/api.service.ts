@@ -15,4 +15,8 @@ export class ApiService {
   public getData(): Observable<any> {
     return this.http.get(`${environment.apiUrl}/user`);
   }
+
+  public getProduction(): Observable<any> {
+    return this.http.get(`${environment.apiUrl}/production`);
+  }
 }

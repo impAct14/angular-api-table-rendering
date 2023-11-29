@@ -1,0 +1,19 @@
+.production-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.production-table th,
+.production-table td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.production-table th {
+  background-color: #f2f2f2;
+}
+
+.production-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

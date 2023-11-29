@@ -1,7 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {ApiService} from "../../../api.service";
+import { Component, OnInit } from '@angular/core';
+import { ApiService } from "../../../api.service";
 import { Users } from 'src/app/models/Users';
-
 
 @Component({
   selector: 'app-data-table',
@@ -9,6 +8,7 @@ import { Users } from 'src/app/models/Users';
   styleUrls: ['./data-table.component.scss']
 })
 export class DataTableComponent implements OnInit {
+
   data: Users[] = [];
 
   constructor(private apiService: ApiService) {

@@ -1,0 +1,21 @@
+<div>
+  <h2>Production List</h2>
+  <table class="production-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let production of data">
+        <td>{{ production.id }}</td>
+        <td>{{ production.name }}</td>
+        <td>{{ production.description }}</td>
+        <td>{{ production.price }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
