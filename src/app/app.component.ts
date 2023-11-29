@@ -13,5 +13,5 @@ export class AppComponent {
     console.log(environment.production); // Logs false for development environment
   }
 
-  title = 'angular-api-table-rendering';
+  title = 'Angular API table rendering';
 }

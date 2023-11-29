@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ApiService} from "../../../api.service";
+import { Users } from 'src/app/models/Users';
 
 
 @Component({
@@ -8,15 +9,19 @@ import {ApiService} from "../../../api.service";
   styleUrls: ['./data-table.component.scss']
 })
 export class DataTableComponent implements OnInit {
-  data: { id: number; name: string; email: string }[] = [];
+  data: Users[] = [];
 
   constructor(private apiService: ApiService) {
   }
 
   ngOnInit() {
-    this.apiService.getData().subscribe((data: { id: number; name: string; email: string; }[]) => {
+    this.apiService.getData().subscribe((data: Users[]) => {
       this.data = data;
       console.log(data);
-    });
+    },
+      (error) => {
+        console.error(error);
+      }
+    );
   }
 }
