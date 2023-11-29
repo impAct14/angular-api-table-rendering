@@ -13,6 +13,6 @@ export class ApiService {
   }
 
   public getData(): Observable<any> {
-    return this.http.get(`${environment.apiUrl}/data`);
+    return this.http.get(`${environment.apiUrl}/user`);
   }
 }
